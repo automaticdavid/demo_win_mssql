@@ -5,7 +5,3 @@
     - name: Including Windows MSSQL role
       include_role:
         name: win-mssql
-      vars:
-        ec2_lb_filters: 
-          'tag:Name': "{{ ec2_scope }}"
-          'instance-state-name': running
